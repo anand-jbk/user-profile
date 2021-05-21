@@ -12,6 +12,7 @@ public class UserProfileRepository {
     private static final Logger LOGGER = LoggerFactory.getLogger(UserProfileRepository.class);
 
     public UserProfile getUSerProfile(final String id) {
+
         LOGGER.info("Entry getUserProfile");
         return new UserProfile(id, id);
     }
